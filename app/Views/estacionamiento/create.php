@@ -3,15 +3,23 @@
 <?= session()->getFlashdata('error') ?>
 <?= validation_list_errors() ?>
 
-<form action="/news/create" method="post">
+<form action="/estacionamiento/create" method="post">
     <?= csrf_field() ?>
 
-    <label for="title">Title</label>
-    <input type="input" name="title" value="<?= set_value('title') ?>">
+    <label for="placa">Ingrese placa:</label>
+    <input type="input" name="placa" value="<?= set_value('placa') ?>">
     <br>
 
-    <label for="body">Text</label>
-    <textarea name="body" cols="45" rows="4"><?= set_value('body') ?></textarea>
+    <label for="color">Ingrese color:</label>
+    <input type="input" name="color" value="<?= set_value('color') ?>">
+    <br>
+
+    <label for="modelo">Ingrese modelo:</label>
+    <input type="input" name="modelo" value="<?= set_value('modelo') ?>">
+    <br>
+
+    <label for="clase">Ingrese clase:</label>
+    <input type="input" name="clase" value="<?= set_value('clase') ?>">
     <br>
 
     <input type="submit" name="submit" value="Create news item">

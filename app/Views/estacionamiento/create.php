@@ -1,7 +1,6 @@
 <h2><?= esc($title) ?></h2>
 
 <?= session()->getFlashdata('error') ?>
-<?= validation_list_errors() ?>
 
 <form action="/estacionamiento/create" method="post">
     <?= csrf_field() ?>

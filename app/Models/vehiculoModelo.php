@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class NewModels extends Model
+class vehiculoModelo extends Model
 {
     protected $table = 'vehiculo';
     public function getVehiculos($placa = false)
